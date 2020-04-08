@@ -1,102 +1,121 @@
 \documentclass{zjureport}
 % =============================================
-% Part 0 Edit the info
+% Part 1 Edit the info
 % =============================================
 
-\major{信息工程}
-\name{徐阳}
-\title{本科实验报告}
-\stuid{3171002333}
-\college{信息与电子工程学院}
-\date{\zhtoday}
-\lab{寝室}
-\course{数字信号处理}
-\instructor{Hao}
-\grades{59}
-\expname{系统传输函数零极点分析}
-\exptype{设计实验}
-\partner{nil}
+\newcommand{\major}{测控技术及仪器}
+\newcommand{\name}{郑成琦}
+\newcommand{\stuid}{3179801017}
+\newcommand{\newdate}{2020-4-8}
+\newcommand{\loc}{家}
 
+\newcommand{\course}{EDA技术应用}
+\newcommand{\tutor}{黄添添}
+\newcommand{\grades}{None}
+\newcommand{\newtitle}{四位计数器设计}
+\newcommand{\exptype}{设计与编码实验}
+\newcommand{\group}{None}
+
+% =============================================
+% Part 1 Main document
+% =============================================
 \begin{document}
-% =============================================
-% Part 1 Header
-% =============================================
-\makecover
-\makeheader
+\thispagestyle{empty}
+\begin{figure}[h]
+  \begin{minipage}{0.6\linewidth}
+    \centerline{\includegraphics[width=\linewidth]{head.jpg}}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{.4\linewidth}
+    \raggedleft
+    \begin{tabular*}{.8\linewidth}{ll}
+      专业： & \underline\major   \\
+      姓名： & \underline\name    \\
+      学号： & \underline\stuid   \\
+      日期： & \underline\newdate \\
+      地点： & \underline\loc
+    \end{tabular*}
+  \end{minipage}
+\end{figure}
+
+\begin{table}[!htbp]
+  \centering
+  \begin{tabular*}{\linewidth}{llllll}
+    课程名称： & \underline\course   & 指导老师： & \underline\tutor   & 成绩：       &  \underline\grades \\
+    实验名称： & \underline\newtitle & 实验类型： & \underline\exptype & 同组学生姓名：& \underline\group
+  \end{tabular*}
+\end{table}
 
 % =============================================
 % Part 2 Main document
 % =============================================
 
 \section{实验目的和要求}
-  系统差分方程和传输函数是线性系统的重要概念，通过分析系统差分方程和传输函数的特性，编程查看系统零极点分布，加深对线性系统的了解。
+1、了解Quartus II开发环境，熟悉Verilog语言基本语法
+
+2、实现4位计数器选择功能
 \section{实验内容和步骤}
 
   \subsection{实验内容}
-
-      给出如下差分方程：
-      $$y(n) - (0.5+a)\times y(n-1) + 0.5ay(n-2) = x(n)$$
-      \begin{enumerate}
-          \item 求解系统传输函数表达式。
-          \item 当 $a$ 取 $0.8, 0.9, 1.0, 1.1$时，画出零极点分布图。
-                \label{item:val}
-          \item 根据 \ref{item:val} 中 $a$ 的取值，分别画出幅频响应函数图像。
-      \end{enumerate}
-
+	根据所给的手册《My First FPGA》进行实验操作。最后在上述基础上加入计数选择功能。
   \subsection{实验步骤}
-      \begin{enumerate}
-          \item 编写程序，求解零极点
-          \item 画出图形。
-          \item 观察结果。
-      \end{enumerate}
-
+	\begin{clause}
+		\item 加法器的HDL语言编写
+		\item PLL模块调用
+		\item Multiplexer模块调用
+		\item 进行仿真
+	\end{clause}
 \section{主要仪器设备}
-  计算机，Matlab 软件
+  计算机，Quartus
 
 \section{操作方法和实验步骤}
-  \subsection{传输函数}
-      对差分方程进行处理，求出传输函数表达式。
-  \subsection{零极点分布图}
-      在此基础上，使用 Matlab 中的 \texttt{zplane} 函数进一步画出在不同 $a$ 取值情况下的零极点分布图。
-  \subsection{幅频响应}
-      之后使用 \texttt{freqz} 函数画出不同a取值情况下的频率响应图像。
+  \subsection{加法器HDL语言编写}
+    \lstinputlisting[language=Verilog]{FPGA_EDA_one/simple_counter.v}
+  \subsection{PLL模块调用}
+    (因为软件原因，模块显示在我的电脑是挤在一起十分混乱)
+    \begin{clause}
+      \item 模块图片
+      \begin{center}
+        \includegraphics[width=0.6\linewidth]{PLL.jpg}
+      \end{center}
+      \item 模块连线 
+      \begin{center}
+        \includegraphics[width=0.6\linewidth]{figures/Link_1.jpg}
+        \\PLL的输出作为计数器的输入来作为主要的计数速度控制手段。
+      \end{center}
 
+
+    \end{clause}
+  \subsection{Multiplexer模块调用}
+    
 \section{实验数据记录和处理}
   \subsection{传输函数}
-      根据差分方程，传输函数如下：
-      $$H(z) = \frac{Y(z)}{X(z)} = \frac{z^2}{z^2-(0.5+a)z+0.5a}$$
+    根据差分方程，传输函数如下：
+    $$H(z) = \frac{Y(z)}{X(z)} = \frac{z^2}{z^2-(0.5+a)z+0.5a}$$
   \subsection{零极点分布图}
-      $a = 0.8, 0.9, 1.1$时，系统的零极点分布图及程序如下：
-      \begin{enumerate}
-          \item 图像如图~\ref{fig:dist} 所示。
-                \begin{figure}[!htbp]
-                    \centering
-                    \includegraphics[width=0.6\linewidth]{01.jpg}
-                    \caption{系统的零极点分布图}
-                    \label{fig:dist}
-                \end{figure}
-          \item 代码
-                \lstinputlisting[language=MATLAB]{code/do.m}
-      \end{enumerate}
+    a = 0.8，0.9，1.1时，系统的零极点分布图及程序如下：
+    \begin{clause}
+      \item 图像
+      \begin{center}
+        \includegraphics[width=0.6\linewidth]{01.jpg}
+      \end{center}
+      \item 代码
+      \lstinputlisting[language=MATLAB]{code/do.m}
+    \end{clause}
 
   \subsection{频率响应}
-      $a = 0.8, 0.9, 1.0, 1.1$时，系统的频率响应函数图形及程序如下：
-      \begin{enumerate}
-          \item 图像如图~\ref{fig:resp} 所示。
-                \begin{figure}[!htbp]
-                    \centering
-                    \includegraphics[width=0.6\linewidth]{02-1.jpg}
-                    \caption{系统的频率响应函数图形}
-                    \label{fig:resp}
-                \end{figure}
-          \item 代码
-                \lstinputlisting[language=MATLAB]{code/next.m}
-      \end{enumerate}
+    a = 0.8，0.9，1.0，1.1时，系统的频率响应函数图形及程序如下：
+    \begin{clause}
+      \item 图像
+      \begin{center}
+        \includegraphics[width=0.6\linewidth]{02-1.jpg}
+      \end{center}
+      \item 代码
+      \lstinputlisting[language=MATLAB]{code/next.m}
+    \end{clause}
 
 \section{实验结果与分析}
 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet pharetra orci. Pellentesque ex est, ultricies non viverra sed, iaculis sed est. Suspendisse ex felis, aliquam et nulla in, vehicula gravida velit. In porttitor volutpat tincidunt. Aenean eleifend non augue sit amet ultrices. Proin rutrum odio vitae est luctus, eu facilisis leo dapibus. Aliquam commodo efficitur erat, sit amet pulvinar nulla ultrices ac. Vestibulum ullamcorper malesuada odio. Suspendisse id sollicitudin arcu. Nam fringilla commodo neque quis posuere. Sed lobortis justo nisl, ut molestie sapien semper ac. Proin in massa vel neque tempus porta id accumsan magna. Aliquam pharetra lacus ac arcu accumsan varius. Praesent condimentum mi vitae purus elementum imperdiet.
-
-  Etiam in bibendum arcu. Etiam porta metus ligula. Cras tempor, leo vel faucibus consequat, diam justo malesuada ex, et pretium risus est sit amet lectus. In sit amet efficitur quam. Maecenas quis molestie odio, et consectetur augue. Mauris erat erat, tristique a nunc in, molestie molestie lectus. Nullam commodo ornare urna, vel tincidunt libero aliquam ut. Ut hendrerit nunc id sapien tristique mollis. Aenean maximus, neque molestie dignissim cursus, augue neque dictum purus, vitae varius diam ex vitae est. Nulla bibendum facilisis semper. Nulla placerat ultricies lorem, quis consequat metus pulvinar eu. Morbi sed massa arcu. Nulla sagittis felis a suscipit elementum.
+balabalabala
 
 \end{document}

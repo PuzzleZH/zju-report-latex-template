@@ -1,13 +1,23 @@
 # 浙江大学实验报告模板
 
-[![CircleCI](https://circleci.com/gh/megrxu/zju-report-latex-template.svg?style=svg)](https://circleci.com/gh/megrxu/zju-report-latex-template)
-
-A LaTeX template of report in required format.
+A LaTeX template of report in required format in ZJU (most cases).
 
 ## Usage
 
-Simply
+Just follow the template and compile.
+
+Only tested on TexLive 2017, Windows 10, xelatex.
+
+```bash
+latexmk --xelatex report.tex
+```
+
+OR
 
 ```bash
 xelatex report.tex
 ```
+
+## To do
+
+- Add a cover
