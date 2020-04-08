@@ -1,0 +1,77 @@
+# do my_first_fpga.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 14:23:40 on Apr 08,2020
+# vlog -work work my_first_fpga.vo 
+# -- Compiling module my_first_fpga
+# 
+# Top level modules:
+# 	my_first_fpga
+# End time: 14:23:40 on Apr 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 14:23:40 on Apr 08,2020
+# vlog -work work Waveform1.vwf.vt 
+# -- Compiling module my_first_fpga_vlg_sample_tst
+# -- Compiling module my_first_fpga_vlg_check_tst
+# -- Compiling module my_first_fpga_vlg_vec_tst
+# 
+# Top level modules:
+# 	my_first_fpga_vlg_vec_tst
+# End time: 14:23:40 on Apr 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate work.my_first_fpga_vlg_vec_tst -voptargs=""+acc"" 
+# Start time: 14:23:40 on Apr 08,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# //  ModelSim SE-64 10.5 Feb 13 2016 
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Refreshing C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/work.my_first_fpga_vlg_vec_tst
+# Loading work.my_first_fpga_vlg_vec_tst
+# ** Error (suppressible): (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'sgate' at "sgate".
+# No such file or directory. (errno = ENOENT)
+# Refreshing C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/work.my_first_fpga
+# Loading work.my_first_fpga
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_pll
+# Loading cycloneive_ver.cycloneive_m_cntr
+# Loading cycloneive_ver.cycloneive_n_cntr
+# Loading cycloneive_ver.cycloneive_scale_cntr
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# ** Error (suppressible): (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'sgate' at "sgate".
+# No such file or directory. (errno = ENOENT)
+# Refreshing C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/work.my_first_fpga_vlg_sample_tst
+# Loading work.my_first_fpga_vlg_sample_tst
+# ** Error (suppressible): (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'sgate' at "sgate".
+# No such file or directory. (errno = ENOENT)
+# Refreshing C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/work.my_first_fpga_vlg_check_tst
+# Loading work.my_first_fpga_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# Warning : Input clock freq. is under VCO range. Cycloneive PLL may lose lock
+# Time: 3000.000 ps  Instance: my_first_fpga_vlg_vec_tst.i1.\inst2|altpll_component|auto_generated|pll1 
+# Simulation passed !
+# ** Note: $finish    : Waveform1.vwf.vt(203)
+#    Time: 1 us  Iteration: 0  Instance: /my_first_fpga_vlg_vec_tst/tb_out
+# End time: 14:23:42 on Apr 08,2020, Elapsed time: 0:00:02
+# Errors: 6, Warnings: 1

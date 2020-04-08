@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for my_first_fpga
-Tue Apr 07 23:29:42 2020
+Wed Apr 08 13:46:08 2020
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -109,7 +109,7 @@ applicable agreement for further details.
 +-------------------+--------+--------------------------+
 ; SDC File Path     ; Status ; Read at                  ;
 +-------------------+--------+--------------------------+
-; my_first_fpga.sdc ; OK     ; Tue Apr 07 23:29:39 2020 ;
+; my_first_fpga.sdc ; OK     ; Wed Apr 08 13:46:04 2020 ;
 +-------------------+--------+--------------------------+
 
 
@@ -461,7 +461,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Tue Apr 07 23:29:37 2020
+    Info: Processing started: Wed Apr 08 13:46:02 2020
 Info: Command: quartus_sta my_first_fpga -c my_first_fpga
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
@@ -520,8 +520,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 18 warnings
     Info: Peak virtual memory: 4736 megabytes
-    Info: Processing ended: Tue Apr 07 23:29:42 2020
-    Info: Elapsed time: 00:00:05
+    Info: Processing ended: Wed Apr 08 13:46:08 2020
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:04
 
 

@@ -1,5 +1,5 @@
 Flow report for my_first_fpga
-Tue Apr 07 23:29:42 2020
+Wed Apr 08 14:23:37 2020
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Apr 07 23:29:35 2020       ;
+; Flow Status                        ; Successful - Wed Apr 08 14:23:37 2020       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; my_first_fpga                               ;
 ; Top-level Entity Name              ; my_first_fpga                               ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/07/2020 23:28:54 ;
+; Start date & time ; 04/08/2020 13:45:16 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; my_first_fpga       ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+---------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 207273071440834.158627333419248 ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 207273071440834.158632471618372 ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                        ; ALTPLL                          ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                        ; LPM_MUX                         ; --            ; --          ; --         ;
 ; IP_TOOL_VERSION                     ; 13.1                            ; --            ; --          ; --         ;
@@ -99,11 +99,38 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 4653 MB             ; 00:00:02                           ;
-; Fitter                    ; 00:00:24     ; 1.3                     ; 5391 MB             ; 00:00:24                           ;
-; Assembler                 ; 00:00:08     ; 1.0                     ; 4618 MB             ; 00:00:07                           ;
+; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 4653 MB             ; 00:00:03                           ;
+; Fitter                    ; 00:00:26     ; 1.3                     ; 5386 MB             ; 00:00:28                           ;
+; Assembler                 ; 00:00:07     ; 1.0                     ; 4618 MB             ; 00:00:06                           ;
 ; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 4736 MB             ; 00:00:04                           ;
-; Total                     ; 00:00:40     ; --                      ; --                  ; 00:00:37                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4585 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4585 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
+; Total                     ; 00:01:09     ; --                      ; --                  ; 00:01:08                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -116,6 +143,33 @@ applicable agreement for further details.
 ; Fitter                    ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
 ; Assembler                 ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2U71NLF  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -126,6 +180,34 @@ quartus_map --read_settings_files=on --write_settings_files=off my_first_fpga -c
 quartus_fit --read_settings_files=off --write_settings_files=off my_first_fpga -c my_first_fpga
 quartus_asm --read_settings_files=off --write_settings_files=off my_first_fpga -c my_first_fpga
 quartus_sta my_first_fpga -c my_first_fpga
+quartus_eda --read_settings_files=on --write_settings_files=off my_first_fpga -c my_first_fpga
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog my_first_fpga -c my_first_fpga --vector_source=C:/Users/94718/Desktop/FPGA_EDA_one/Waveform.vwf --testbench_file=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/Waveform.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/ my_first_fpga -c my_first_fpga
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog my_first_fpga -c my_first_fpga --vector_source=C:/Users/94718/Desktop/FPGA_EDA_one/Waveform.vwf --testbench_file=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/Waveform.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/ my_first_fpga -c my_first_fpga
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog my_first_fpga -c my_first_fpga --vector_source=C:/Users/94718/Desktop/FPGA_EDA_one/Waveform1.vwf --testbench_file=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/ my_first_fpga -c my_first_fpga
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog my_first_fpga -c my_first_fpga --vector_source=C:/Users/94718/Desktop/FPGA_EDA_one/Waveform1.vwf --testbench_file=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/ my_first_fpga -c my_first_fpga
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog my_first_fpga -c my_first_fpga --vector_source=C:/Users/94718/Desktop/FPGA_EDA_one/Waveform1.vwf --testbench_file=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/ my_first_fpga -c my_first_fpga
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog my_first_fpga -c my_first_fpga --vector_source=C:/Users/94718/Desktop/FPGA_EDA_one/Waveform1.vwf --testbench_file=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/ my_first_fpga -c my_first_fpga
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog my_first_fpga -c my_first_fpga --vector_source=C:/Users/94718/Desktop/FPGA_EDA_one/Waveform1.vwf --testbench_file=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/ my_first_fpga -c my_first_fpga
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog my_first_fpga -c my_first_fpga --vector_source=C:/Users/94718/Desktop/FPGA_EDA_one/Waveform1.vwf --testbench_file=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/ my_first_fpga -c my_first_fpga
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog my_first_fpga -c my_first_fpga --vector_source=C:/Users/94718/Desktop/FPGA_EDA_one/Waveform1.vwf --testbench_file=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --functional=off --flatten_buses=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/ my_first_fpga -c my_first_fpga
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog my_first_fpga -c my_first_fpga --vector_source=C:/Users/94718/Desktop/FPGA_EDA_one/Waveform1.vwf --testbench_file=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/modelsim/Waveform1.vwf.vt
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog my_first_fpga -c my_first_fpga --vector_source=C:/Users/94718/Desktop/FPGA_EDA_one/Waveform1.vwf --testbench_file=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/ my_first_fpga -c my_first_fpga
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog my_first_fpga -c my_first_fpga --vector_source=C:/Users/94718/Desktop/FPGA_EDA_one/Waveform1.vwf --testbench_file=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/ my_first_fpga -c my_first_fpga
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog my_first_fpga -c my_first_fpga --vector_source=C:/Users/94718/Desktop/FPGA_EDA_one/Waveform1.vwf --testbench_file=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/ my_first_fpga -c my_first_fpga
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog my_first_fpga -c my_first_fpga --vector_source=C:/Users/94718/Desktop/FPGA_EDA_one/Waveform1.vwf --testbench_file=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/94718/Desktop/FPGA_EDA_one/simulation/qsim/ my_first_fpga -c my_first_fpga
 
 
 
