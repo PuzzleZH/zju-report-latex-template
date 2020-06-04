@@ -1,22 +1,151 @@
 {
-    "latex-workshop.latex.tools": [{
-        "name": "latexmk-xelatex",
-        "command": "latexmk",
-        "args": [
-          "-xelatex",
-          "-synctex=1",
-          "-interaction=nonstopmode",
-          "-file-line-error",
-          "%DOC%"
-        ]
-      }
-    ],
-    "latex-workshop.latex.recipes": [
-      {
-        "name": "latexmk-xelatex",
-        "tools": [
-          "latexmk-xelatex"
-        ]
-      }
-    ],
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.dontShowNewVersionMessage": true,
+  "remote.SSH.remotePlatform": {
+    "Hawei": "linux",
+    "119.3.255.154": "linux"
+  },
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+  "[verilog]": {
+    "editor.defaultFormatter": "ericsonj.verilogformat"
+  },
+  "editor.minimap.enabled": true,
+  "breadcrumbs.enabled": true,
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": false,
+  "editor.largeFileOptimizations": false,
+  "verilog.linting.verilator.runAtFileLocation": true,
+  "verilog-format.path": "C:/Users/94718/Documents/gagag/verilog-format.exe",
+  "fileheader.Author": "Chengqi",
+  "fileheader.LastModifiedBy": "Chengqi",
+  "terminal.integrated.inheritEnv": false,
+  "remote.SSH.showLoginTerminal": true,
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "Monokai",
+  "C_Cpp.updateChannel": "Insiders",
+  "python.pythonPath": "",
+  "explorer.confirmDelete": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.acceptSuggestionOnEnter": "smart",
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "CHINA",
+      "tools": [
+        "xelatex"
+      ]
+    },
+    {
+      "name": "latexmk 🔃",
+      "tools": [
+        "latexmk"
+      ]
+    },
+    {
+      "name": "latexmk (latexmkrc)",
+      "tools": [
+        "latexmk_rconly"
+      ]
+    },
+    {
+      "name": "latexmk (lualatex)",
+      "tools": [
+        "lualatexmk"
+      ]
+    },
+    {
+      "name": "pdflatex ➞ bibtex ➞ pdflatex × 2",
+      "tools": [
+        "pdflatex",
+        "bibtex",
+        "pdflatex",
+        "pdflatex"
+      ]
+    },
+    {
+      "name": "Compile Rnw files",
+      "tools": [
+        "rnw2tex",
+        "latexmk"
+      ]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "xelatex",
+      "command": "xelatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ],
+      "env": {}
+    },
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ],
+      "env": {}
+    },
+    {
+      "name": "lualatexmk",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-lualatex",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ],
+      "env": {}
+    },
+    {
+      "name": "latexmk_rconly",
+      "command": "latexmk",
+      "args": [
+        "%DOC%"
+      ],
+      "env": {}
+    },
+    {
+      "name": "pdflatex",
+      "command": "pdflatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ],
+      "env": {}
+    },
+    {
+      "name": "bibtex",
+      "command": "bibtex",
+      "args": [
+        "%DOCFILE%"
+      ],
+      "env": {}
+    },
+    {
+      "name": "rnw2tex",
+      "command": "Rscript",
+      "args": [
+        "-e",
+        "knitr::opts_knit$set(concordance = TRUE); knitr::knit('%DOCFILE_EXT%')"
+      ],
+      "env": {}
+    }
+  ],
+  "git.enableSmartCommit": true,
+  "tabnine.experimentalAutoImports": 0
 }
